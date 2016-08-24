@@ -1,0 +1,5 @@
+统计程序运行时间，可以简单使用time模块来进行
+  start := time.Now()  程序开始时间
+	stop := time.Now()   程序结束时间
+	result := stop.Sub(start).Nanoseconds()/1000000  换算时间差值，并转换单位为毫秒
+	fmt.Println(result)
